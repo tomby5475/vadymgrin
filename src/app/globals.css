@@ -14,10 +14,12 @@
   --textColorLight: #AFB9FA;
   --textColorDark: #222222;
   --textColorWhite: #DDE2FF;
+  --textColorLightGrey: #696969;
   --smallTextColor: #5F69BE;
   --title: #464BDC;
   --textBtnColor: #E4E5F9;
   --btnColor: #3D43BC;
+  --btnColorDisabled: #767CFF;
   --btnColorHover: #5A64DC;
   --btnColorClick: #262BA8;
 }

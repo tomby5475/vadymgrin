@@ -1,5 +1,5 @@
 .container {
-  background-color: var(--backgroundColor);
+  
   overflow-x: hidden;
   display: flex;
   justify-content: center;
@@ -7,10 +7,16 @@
   margin: 0;
 }
 
+@media only screen and (max-width: 480px) {
+
 .main {
   width: 100%;
   max-width: 480px;
   margin: 0 auto;
+}
+
+.header {
+  background-color: var(--backgroundColor);
   padding: 1.5rem 1rem;
 }
 
@@ -23,6 +29,8 @@
 
 .intro {
   font-family: 'Figtree', 'Catamaran', sans-serif;
+  background-color: var(--backgroundColor);
+  
 }
 
 .intro h1 {
@@ -30,20 +38,21 @@
   font-weight: bold;
   color: var(--textColorWhite);
   line-height: 120%;
-  letter-spacing: 2%;
+  letter-spacing: 1.08px;
   text-align: center;
-  max-width: 23.75rem;
-  margin: 0 1rem;
+  max-width: 26rem;
+  margin: 0 auto;
 }
 
 .vadym_about {
   position: relative;
   max-width: 100%;
-  width: 375px;
+  width: 400px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  /* margin: 0 auto; */
 }
 
 .vadym_foto {
@@ -55,30 +64,31 @@
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 12px;
-  right: 18px; 
+  top: 2.2rem;
+  right: 2.4rem; 
 }
 
 .intro_heading, .intro_name {
   font-weight: bold;
   line-height: 120%;
-  letter-spacing: 2%;
   color: var(--title);
 }
 
 .intro_heading {
   font-size: 4rem;
+  letter-spacing: 1.28px;
   margin-top: -3rem;
 }
 
 .intro_name {
   font-size: 2.625rem;
+  letter-spacing: 0.84px;
 }
 
 .intro_subheading {
   font-size: 2rem;
   line-height: 150%;
-  letter-spacing: 2%;
+  letter-spacing: 0.64px;
   color: var(--textColorLight);
   margin: 1.5rem 0;
 }
@@ -89,14 +99,14 @@
   font-weight: bold;
   font-style: italic;
   line-height: 150%;
-  letter-spacing: 2%;
+  letter-spacing: 0.84px;
   color: var(--textColorLight);
 }
 
 .intro_focus {
   font-size: 2rem;
   line-height: 150%;
-  letter-spacing: 2%;
+  letter-spacing: 0.64px;
   color: var(--textColorLight);
   margin-bottom: 1.5rem;
 }
@@ -104,29 +114,25 @@
 .intro_description {
   font-size: 1.25rem;
   line-height: 150%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--textColorWhite);
 }
 
 .teacher {
   background-color: var(--backgroundColorLight);
+  padding: 1.5rem 1rem;
   max-width: 100%;
-  width: 375px;
+  width: 480px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  /* width: 100vw;
-  position: relative;
-  left: 50%; 
-  transform: translateX(-50%);  */
 }
 
 .teacher h1 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 120%;
-  letter-spacing: 2%;
+  letter-spacing: 0.64px;
   text-transform: uppercase;
   color: var(--textColorLight);
   margin: 1.5rem 0;
@@ -137,16 +143,16 @@
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 150%;
-  letter-spacing: 2%;
+  letter-spacing: 0.4px;
   color: var(--textColorLight);
 }
 
-.teacher p {
+.teacher_introduction {
   font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   color: var(--textColorWhite);
   margin: 1rem 0;
 }
@@ -170,7 +176,7 @@
   font-size: 0.875rem;
   font-weight: bold;
   line-height: 100%;
-  letter-spacing: 4%;
+  letter-spacing: 0.56px;
   transition: transform 0.2s, background-color 0.2s;
   width: 9.25rem;
   height: 3.125rem;
@@ -190,6 +196,76 @@
   align-items: center;
   gap: 1rem;
   color: inherit;
+}
+
+.slider {
+  background-color: var(--backgroundColorWhite);
+  border-radius: 16px;
+  padding: 1.5px;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+}
+
+.slider_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider_header1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slider_btnNav {
+  background-color: var(--btnColor);
+  color: var(--textBtnColor);
+  border: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.slider_btnLeft {
+  margin-right: 1rem;
+}
+
+.slider_name {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 120%;
+  letter-spacing: 0;
+  color: var(--textBtnColorDark);
+}
+
+.slider_role, .slider_date  {
+  font-family: 'Figtree', 'Catamaran', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0;
+}
+
+.slider_role {
+  color: var(--textBtnColorDark);
+  margin: 0.25rem 0;
+}
+
+.slider_date {
+  color: var(--textColorLightGrey);
+  margin-bottom: 1rem;
+}
+
+.slider_body {
+  font-family: 'Figtree', 'Catamaran', sans-serif;
+  font-size: 0.875rem;
+  line-height: 21px;
+  color: var(--textBtnColorDark);
+}
+
+.slider_body p {
+  margin-bottom: 1rem;
 }
 
 /* .subscribe_container {
@@ -239,3 +315,5 @@
 .substack {
   color: var(--smallTextColor);
 } */
+
+}
