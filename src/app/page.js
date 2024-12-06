@@ -2,6 +2,7 @@ import styles from "./page.module.css"
 import Header from "../components/header"
 import Intro from "../components/intro"
 import Teacher from "../components/teacher"
+import Writer from "../components/writer"
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Header/>
         <Intro/>
         <Teacher/>
+        <Writer/>
       </main>
       <footer className={styles.footer}>
       </footer>
