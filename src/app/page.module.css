@@ -1,9 +1,8 @@
 .container {
-  
   overflow-x: hidden;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -29,8 +28,7 @@
 
 .intro {
   font-family: 'Figtree', 'Catamaran', sans-serif;
-  background-color: var(--backgroundColor);
-  
+  background-color: var(--backgroundColor);  
 }
 
 .intro h1 {
@@ -52,7 +50,6 @@
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1rem;
-  /* margin: 0 auto; */
 }
 
 .vadym_foto {
@@ -135,7 +132,7 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
   color: var(--textColorLight);
-  margin: 1.5rem 0;
+  margin: 0 0 1.5rem 0;
 }
 
 .teacher h2 {
@@ -377,64 +374,59 @@
   z-index: 2;
 }
 
-
-
-/* .btn_book_manning {
-  width: 12.3rem;
-  height: 3.25rem;
+.btn_doer {
+  padding: 0.8rem 1.5rem;
 }
 
-.btn_book_amazon {
-  width: 11.7rem;
-  height: 3.25;
-} */
-
-/* .subscribe_container {
+.teamLead {
   display: flex;
-  border: 1px solid var(--btnColor); 
-  border-radius: 8px;
-  overflow: hidden;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.subscribe_container input {
-  border: none;
-  outline: none;
-  padding: 10px 15px;
-  flex: 1;
-  font-size: 16px;
-  color: var(--textColorWhite);
-  background-color: var(--backgroundColorLight); 
+.teamLead_col {
+  display: flex;
+  flex-direction: column;
 }
 
-.subscribe_container input::placeholder {
-  color: var(--smallTextColor); 
+.teamLead_col div {
+  height: 3.5rem; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.subscribe_container button {
-  border: none;
-  outline: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: var(--textColorWhite);
-  background-color: var(--btnColor); 
-  cursor: pointer;
+.teamLead_col img {
+  max-height: 100%;
+  max-width: 100%; 
 }
 
-.subscribe_container button:hover {
-  background-color: #6069ff; 
-}
- 
-.termsOfUse {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
-  font-size: 0.75rem;
-  line-height: 140%;
-  letter-spacing: 0%;
-  color: var(--smallTextColor);
+.footer {
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  padding: 1rem;
+  justify-content: space-between;
 }
 
-.substack {
-  color: var(--smallTextColor);
-} */
+.footer_logo {
+  width: 10.4rem;
+}
+
+.footer_logo img {
+  height: 2.5rem;
+}
+
+.footer_socialMedia {
+  display: flex;
+  gap: 1.5rem;
+  width: 10.4rem;
+}
+
+.footer_socialMedia a {
+  display: inline-block;
+  transition: transform 0.3s ease; 
+}
 
 }

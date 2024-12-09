@@ -69,9 +69,6 @@ export default function Writer () {
                         alt="cloud"
                     />
                 </div>
-
-
-
             </div>
         </div>
     )
