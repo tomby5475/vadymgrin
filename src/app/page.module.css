@@ -45,24 +45,37 @@
 .vadym_about {
   position: relative;
   max-width: 100%;
-  width: 400px;
+  width: fit-content;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1rem;
 }
 
+.vadym_about img {
+  max-width: 100%;
+  height: auto;
+}
+
+.introImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: fit-content;
+}
+
 .vadym_foto {
-  width: 343px;
-  object-fit: cover;
+  position: relative;
+  z-index: 1;
 }
 
 .wave_icon {
-  width: 2rem;
-  height: 2rem;
   position: absolute;
-  top: 2.2rem;
-  right: 2.4rem; 
+  top: 2%;
+  left: 85%;
+  width: 20%;
+  z-index: 2;
 }
 
 .intro_heading, .intro_name {

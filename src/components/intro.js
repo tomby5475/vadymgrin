@@ -8,16 +8,20 @@ export default function Intro () {
         <div className={styles.intro}>
             <h1>Great design will save the world</h1>
             <article className={styles.vadym_about}>
-                <div className={styles.wave_icon}>
-                    <Image
-                        src={wave}
-                        alt="wave hand"
-                    />
+                <div className={styles.introImg}>
+                    <div className={styles.wave_icon}>
+                        <Image
+                            src={wave}
+                            alt="wave hand"
+                        />
+                    </div>
+                    <div className={styles.vadym_foto}>
+                        <Image
+                            src={vadym}
+                            alt="Vadym"
+                        />
+                    </div>
                 </div>
-                <Image className={styles.vadym_foto}
-                        src={vadym}
-                        alt="vadym"
-                />
                 <h2 className={styles.intro_heading}>Hi,</h2>
                 <span className={styles.intro_name}>I'm Vadym Grin</span>
                 <p className={styles.intro_subheading}>That's why I</p>
