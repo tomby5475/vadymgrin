@@ -24,7 +24,7 @@ export default function Doer () {
                             src={linkedIn}
                             alt="LinkedIn icon"
                         />
-                        LinkedIn
+                        <span>LinkedIn</span>
                     </a>
             </div>
             <div className={styles.teamLead}>

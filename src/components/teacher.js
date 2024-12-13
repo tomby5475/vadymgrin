@@ -84,7 +84,7 @@ export default function Teacher () {
                             src={callIcon}
                             alt="headphones with microphone"
                         />
-                        Book a call
+                        <span>Book a call</span>
                     </a>
                 </div>
                 <div className={styles.cta_btn}>
@@ -93,7 +93,7 @@ export default function Teacher () {
                             src={writeIcon}
                             alt="paper airplane"
                         />
-                        Message me
+                        <span>Message me</span>
                     </a>
                 </div>
             </div>
