@@ -39,6 +39,28 @@ export default function Writer () {
                     </a>
                 </div>
             </div>
+            <div className={styles.writer_eidos}>
+                <div className={styles.eidos_icon}>
+                    <Image
+                        src={eidos_name}
+                        alt="Eidos icon"
+                    />
+               </div>
+                <div className={styles.main_img_wrapper}>
+                    <div className={styles.main_img}>
+                        <Image
+                            src={eidos}
+                            alt="Eidos"
+                        />
+                    </div>
+                    <div className={styles.cloud}>
+                        <Image
+                            src={cloud}
+                            alt="cloud"
+                        />
+                    </div>
+                </div>
+            </div>
             <h3 className={styles.writer_about}>For the growing community of such professionals, I also regularly publish insightful content on Substack</h3>
             <p className={styles.writer_content}>Discover a world of design with premium articles, gain insights into digital products, explore new tools, and unlock design knowledge and inspiration.</p>
             <div className={styles.writer_eidos_wrapper}>
@@ -50,28 +72,6 @@ export default function Writer () {
                             />
                             <span>Subscribe on Substack</span>
                         </a>
-                </div>
-                <div className={styles.writer_eidos}>
-                    <div className={styles.eidos_icon}>
-                        <Image
-                            src={eidos_name}
-                            alt="Eidos icon"
-                        />
-                    </div>
-                    <div className={styles.main_img_wrapper}>
-                        <div className={styles.main_img}>
-                            <Image
-                                src={eidos}
-                                alt="Eidos"
-                            />
-                        </div>
-                        <div className={styles.cloud}>
-                            <Image
-                                src={cloud}
-                                alt="cloud"
-                            />
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

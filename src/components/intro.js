@@ -21,9 +21,11 @@ export default function Intro () {
                             alt="Vadym"
                         />
                     </div>
+                    <div className={styles.introImg_text}>
+                        <h2 className={styles.intro_heading}>Hi,</h2>
+                        <span className={styles.intro_name}>I'm Vadym Grin</span>
+                    </div>
                 </div>
-                <h2 className={styles.intro_heading}>Hi,</h2>
-                <span className={styles.intro_name}>I'm Vadym Grin</span>
                 <p className={styles.intro_subheading}>That's why I</p>
                 <p className={styles.action_text}>Teach,</p>
                 <p className={styles.action_text}>Write about,</p>
