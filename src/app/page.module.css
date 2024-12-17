@@ -6,6 +6,34 @@
   margin: 0;
 }
 
+.intro,
+.teacher,
+.writer,
+.doer,
+.footer {
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .intro,
+  .teacher,
+  .writer,
+  .doer,
+  .footer {
+    padding: 0 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .intro,
+  .teacher,
+  .writer,
+  .doer,
+  .footer {
+    padding: 0 6rem;
+  }
+}
+
 @media only screen and (max-width: 1023px) {
 
 .main {
@@ -16,7 +44,7 @@
 
 .header {
   background-color: var(--backgroundColor);
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0;
 }
 
 .logo {
@@ -50,7 +78,7 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0;
 }
 
 .vadym_about img {
@@ -140,9 +168,8 @@
 
 .teacher {
   background-color: var(--backgroundColorLight);
-  padding: 1.5rem 1rem;
-  /* max-width: 100%;
-  width: 480px; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -294,9 +321,8 @@
 
 .writer {
   background-color: var(--backgroundColor);
-  padding: 1rem;
-  /* max-width: 100%; */
-  /* width: 480px; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .writer_header {
@@ -306,10 +332,10 @@
   line-height: 120%;
   letter-spacing: 0.32px;
   text-transform: uppercase;
+  margin-bottom: 1.5rem;
 }
 
 .book_img {
-  /* padding: 1.5rem 2rem; */
   display: block;
   margin: 0 auto;
   height: 23rem;
@@ -395,8 +421,8 @@
 .writer_eidos {
   position: relative;
   display: flex;
-  flex-direction: column; /* Adjust content layout */
-  align-items: flex-start; /* Align items to the left */
+  flex-direction: column;
+  align-items: flex-start; 
   margin: auto;
   width: 100%;
 }
@@ -414,8 +440,7 @@
 .main_img {
   position: relative;
   z-index: 1;
-  width: 100%; /* Ensures the image resizes responsively */
-  /* max-width: 300px; */
+  width: 100%;
 }
 
 .eidos_icon {
@@ -440,7 +465,7 @@
 .teamLead {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 4rem;
 }
 
 .teamLead_col {
@@ -465,7 +490,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;  
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   justify-content: space-between;
 }
 
