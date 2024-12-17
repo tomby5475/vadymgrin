@@ -34,6 +34,15 @@
   }
 }
 
+.header {
+  background-color: var(--backgroundColor);
+}
+
+.logo {
+  width: 7.5rem;
+  height: 5rem;
+}
+
 @media only screen and (max-width: 1023px) {
 
 .main {
@@ -43,15 +52,12 @@
 }
 
 .header {
-  background-color: var(--backgroundColor);
   padding: 1.5rem 0;
 }
 
 .logo {
   display: block;
   margin: 0 auto;
-  width: 7.5rem;
-  height: 5rem;
 }
 
 .intro {
@@ -515,4 +521,9 @@
   transition: transform 0.3s ease; 
 }
 
+}
+@media only screen and (min-width: 768px) {
+  .writer_cta {
+    flex-direction: row;
+  }
 }
