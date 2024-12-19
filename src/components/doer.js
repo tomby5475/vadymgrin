@@ -13,7 +13,7 @@ import firstAid from "../app/public/images/logo_firstAid.svg";
 
 export default function Doer() {
   return (
-    <div className={`${styles.teacher} ${styles.doer}`}>
+    <div id="doer" className={`${styles.teacher} ${styles.doer}`}>
       <h1>Doer</h1>
       <h2>
         Driving meaningful impact through intuitive and joyful design

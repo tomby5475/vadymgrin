@@ -1,4 +1,6 @@
 .container {
+  font-family: 'Figtree', Arial, Helvetica, sans-serif;
+  font-size: 16px;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -25,6 +27,7 @@
 }
 
 @media (min-width: 1024px) {
+  .header,
   .intro,
   .teacher,
   .writer,
@@ -38,13 +41,16 @@
   background-color: var(--backgroundColor);
 }
 
+.navMenu {
+  display: none;
+}
+
 .logo {
   width: 7.5rem;
   height: 5rem;
 }
 
 .intro {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   background-color: var(--backgroundColor);  
 }
 
@@ -88,6 +94,8 @@
 }
 
 .vadym_foto {
+  /* height: 493px;
+  width: auto; */
   position: relative;
   z-index: 1;
 }
@@ -109,7 +117,7 @@
 .intro_heading {
   font-size: 4rem;
   letter-spacing: 1.28px;
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
 }
 
 .intro_name {
@@ -445,6 +453,20 @@
   max-width: 100%; 
 }
 
+.footer {
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_logo {
+  width: 10.4rem;
+}
+
+.footer_logo img {
+  height: 2.5rem;
+}
+
 @media only screen and (max-width: 1023px) {
 
 .main {
@@ -470,6 +492,10 @@
 .vadym_about {
   flex-direction: column;
   padding: 1.5rem 0;
+}
+
+.intro_heading {
+  margin-top: -3rem;
 }
 
 .intro_subheading {
@@ -537,9 +563,6 @@
 }
 
 .footer {
-  background-color: var(--backgroundColor);
-  display: flex;
-  flex-direction: row;
   align-items: center;  
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -547,12 +570,7 @@
 }
 
 .footer_logo {
-  width: 10.4rem;
   padding-top: 0.375rem;
-}
-
-.footer_logo img {
-  height: 2.5rem;
 }
 
 .footer_socialMedia {
@@ -565,10 +583,126 @@
   display: inline-block;
   transition: transform 0.3s ease; 
 }
-
 }
+
 @media only screen and (min-width: 768px) {
   .writer_cta {
     flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .header {
+    display: flex;
+    padding-top: 2.5rem; 
+    padding-bottom: 2.5rem; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+
+  .navMenu {
+    display: block;
+  }
+
+  .navMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 1.5rem; 
+  }
+
+  .navMenu li {
+    display: inline;
+  }
+  
+  .navMenu a {
+    font-family: "Catamaran", sans-serif;
+    text-decoration: none;
+    color: var(--textBtnColor); 
+    line-height: 100%;
+    letter-spacing: 0.04rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease; 
+  }
+
+  .navMenu a:hover {
+    color: var(--highlightColor); /* Replace with your desired hover color */
+  }
+
+  .intro {
+    /* padding-top: 2rem; */
+    padding-bottom: 5rem;
+  }
+
+  .intro h1 {
+    font-size: 6.75rem;
+    letter-spacing: 2px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 6rem;
+
+  }
+
+  .vadym_about {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 7rem;
+    overflow: visible;
+  }
+
+  .introImg {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .wave_icon {
+    position: absolute;
+    top: 3%;
+    left: 83%;
+    z-index: 2;
+  }
+
+  .vadym_foto img {
+    display: block; /* Removes unwanted inline spacing */
+    /* max-width: 100%;  */
+    height: auto; /* Keeps aspect ratio */
+  }
+
+  .introImg_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(78%);
+    text-align: left;
+    z-index: 3; 
+  }
+  
+  .intro_about_text {
+    flex: 1; /* Allows text to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem;  */
+    /* padding: 2rem; */
+    text-align: left;
+  }
+
+  .intro_description {
+    margin-top: 1.5rem;
+  }
+
+  .action_text {
+    font-size: 3rem;
+    margin: 0;
+  }
+
+  .teacher {
+   
   }
 }

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Inter:wght@400;700&family=Nunito+Sans:wght@400;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@400;700&family=Nunito+Sans:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 
 * {
   margin: 0;
@@ -22,11 +22,6 @@
   --btnColorDisabled: #767CFF;
   --btnColorHover: #5A64DC;
   --btnColorClick: #262BA8;
-}
-
-body {
-  font-family: 'Catamaran', sans-serif;
-  font-size: 16px;
 }
 
 a {

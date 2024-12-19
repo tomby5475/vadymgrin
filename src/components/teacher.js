@@ -72,7 +72,7 @@ export default function Teacher() {
   const isNextDisabled = currentIndex === reviews.length - 1;
 
   return (
-    <div className={styles.teacher}>
+    <div id="teacher" className={styles.teacher}>
       <h1>Teacher</h1>
       <h2>
         Encouraging designers to keep pushing and making a meaningful difference

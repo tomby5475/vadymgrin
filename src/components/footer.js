@@ -8,7 +8,7 @@ import medium from "../app/public/images/icon_medium.svg"
 
 export default function footer () {
     return (
-        <div className={styles.footer}>
+        <div id="contacts" className={styles.footer}>
             <div className={styles.footer_logo}>
                 <Image
                     src={logo}

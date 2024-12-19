@@ -10,7 +10,7 @@ import eidos_name from "../app/public/images/Eidos_name.svg";
 
 export default function Writer() {
   return (
-    <div className={styles.writer}>
+    <div id="writer" className={styles.writer}>
       <h1 className={styles.writer_header}>Writer</h1>
       <Image className={styles.book_img} src={book} alt="book" />
       <h3 className={styles.writer_about}>
