@@ -74,69 +74,78 @@ export default function Teacher() {
   return (
     <div id="teacher" className={styles.teacher}>
       <h1>Teacher</h1>
-      <h2>
-        Encouraging designers to keep pushing and making a meaningful difference
-      </h2>
-      <p className={styles.teacher_introduction}>
-        My true passion lies in mentoring fellow professionals and offering
-        guidance to help them grow and succeed. Reach out if you’d like me to
-        support your journey.
-      </p>
-      <div className={styles.teacher_cta}>
-        <div className={styles.cta_btn}>
-          <a href="https://calendly.com/vadimgrin/meeting-with-vadym">
-            <Image src={callIcon} alt="headphones with microphone" />
-            <span>Book a call</span>
-          </a>
-        </div>
-        <div className={styles.cta_btn}>
-          <a href="mailto:vadim.grin@gmail.com">
-            <Image src={writeIcon} alt="paper airplane" />
-            <span>Message me</span>
-          </a>
-        </div>
-      </div>
-      <div className={styles.slider}>
-        <div className={styles.slider_header}>
-          <div className={styles.slider_header1}>
-            <button
-              className={`${styles.slider_btnNav} ${styles.slider_btnLeft}`}
-              onClick={handlePrevious}
-              style={{
-                backgroundColor: isPreviousDisabled
-                  ? "var(--btnColorDisabled)"
-                  : "var(--btnColor)",
-                cursor: isPreviousDisabled ? "not-allowed" : "pointer",
-              }}
-              disabled={isPreviousDisabled}
-            >
-              <Image src={btnLeft} alt="left button" />
-            </button>
-            <div className={styles.slider_profile}>
-              <h3 className={styles.slider_name}>
-                {reviews[currentIndex].name}
-              </h3>
-              <p className={styles.slider_role}>{reviews[currentIndex].role}</p>
-              <p className={styles.slider_date}>{reviews[currentIndex].date}</p>
+      <div className={styles.teacher_columns}>
+        <div className={styles.teacher_col1}>
+          <h2>
+            Encouraging designers to keep pushing and making a meaningful
+            difference
+          </h2>
+          <p className={styles.teacher_introduction}>
+            My true passion lies in mentoring fellow professionals and offering
+            guidance to help them grow and succeed. Reach out if you’d like me
+            to support your journey.
+          </p>
+          <div className={styles.teacher_cta}>
+            <div className={styles.cta_btn}>
+              <a href="https://calendly.com/vadimgrin/meeting-with-vadym">
+                <Image src={callIcon} alt="headphones with microphone" />
+                <span>Book a call</span>
+              </a>
+            </div>
+            <div className={styles.cta_btn}>
+              <a href="mailto:vadim.grin@gmail.com">
+                <Image src={writeIcon} alt="paper airplane" />
+                <span>Message me</span>
+              </a>
             </div>
           </div>
-          <button
-            className={`${styles.slider_btnNav} ${styles.slider_btnRight}`}
-            onClick={handleNext}
-            style={{
-              backgroundColor: isNextDisabled
-                ? "var(--btnColorDisabled)"
-                : "var(--btnColor)",
-            }}
-            disabled={isNextDisabled}
-          >
-            <Image src={btnRight} alt="right button" />
-          </button>
         </div>
-        <div className={styles.slider_body}>
-          {reviews[currentIndex].body.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+        <div className={styles.slider}>
+          <div className={styles.slider_header}>
+            <div className={styles.slider_header1}>
+              <button
+                className={`${styles.slider_btnNav} ${styles.slider_btnLeft}`}
+                onClick={handlePrevious}
+                style={{
+                  backgroundColor: isPreviousDisabled
+                    ? "var(--btnColorDisabled)"
+                    : "var(--btnColor)",
+                  cursor: isPreviousDisabled ? "not-allowed" : "pointer",
+                }}
+                disabled={isPreviousDisabled}
+              >
+                <Image src={btnLeft} alt="left button" />
+              </button>
+              <div className={styles.slider_profile}>
+                <h3 className={styles.slider_name}>
+                  {reviews[currentIndex].name}
+                </h3>
+                <p className={styles.slider_role}>
+                  {reviews[currentIndex].role}
+                </p>
+                <p className={styles.slider_date}>
+                  {reviews[currentIndex].date}
+                </p>
+              </div>
+            </div>
+            <button
+              className={`${styles.slider_btnNav} ${styles.slider_btnRight}`}
+              onClick={handleNext}
+              style={{
+                backgroundColor: isNextDisabled
+                  ? "var(--btnColorDisabled)"
+                  : "var(--btnColor)",
+              }}
+              disabled={isNextDisabled}
+            >
+              <Image src={btnRight} alt="right button" />
+            </button>
+          </div>
+          <div className={styles.slider_body}>
+            {reviews[currentIndex].body.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
         </div>
       </div>
     </div>

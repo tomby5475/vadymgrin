@@ -17,6 +17,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
   .intro,
   .teacher,
   .writer,
@@ -27,6 +28,7 @@
 }
 
 @media (min-width: 1024px) {
+
   .header,
   .intro,
   .teacher,
@@ -51,7 +53,7 @@
 }
 
 .intro {
-  background-color: var(--backgroundColor);  
+  background-color: var(--backgroundColor);
 }
 
 .intro h1 {
@@ -60,7 +62,7 @@
   line-height: 120%;
   letter-spacing: 1.08px;
   text-align: center;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 .vadym_about {
@@ -102,13 +104,14 @@
 
 .introImg_text {
   position: absolute;
-  bottom: -7%; 
-  left: 0%; 
+  bottom: -7%;
+  left: 0%;
   color: var(--title);
   z-index: 3;
 }
 
-.intro_heading, .intro_name {
+.intro_heading,
+.intro_name {
   font-weight: bold;
   line-height: 120%;
   color: var(--title);
@@ -162,14 +165,14 @@
   display: flex;
 }
 
-.teacher h1{
+.teacher h1 {
   font-size: 2rem;
   font-weight: 800;
   line-height: 120%;
   letter-spacing: 0.64px;
   text-transform: uppercase;
   color: var(--textColorLight);
-} 
+}
 
 .teacher h2 {
   font-family: 'Figtree', 'Catamaran', sans-serif;
@@ -210,7 +213,7 @@
   line-height: 100%;
   letter-spacing: 0.56px;
   transition: transform 0.2s, background-color 0.2s;
-  width: 9.25rem;
+  width: 9.5rem;
   height: 3.125rem;
 }
 
@@ -273,7 +276,8 @@
   color: var(--textBtnColorDark);
 }
 
-.slider_role, .slider_date  {
+.slider_role,
+.slider_date {
   font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
@@ -346,7 +350,7 @@
 
 .writer_eidos_wrapper {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: flex-start;
   gap: 0.5rem;
 }
@@ -361,7 +365,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; 
+  align-items: flex-start;
   margin: auto;
   width: 100%;
 }
@@ -450,7 +454,7 @@
 
 .teamLead_col img {
   max-height: 100%;
-  max-width: 100%; 
+  max-width: 100%;
 }
 
 .footer {
@@ -469,120 +473,120 @@
 
 @media only screen and (max-width: 1023px) {
 
-.main {
-  width: 100%;
-  max-width: 1023px;
-  margin: 0 auto;
-}
+  .main {
+    width: 100%;
+    max-width: 1023px;
+    margin: 0 auto;
+  }
 
-.header {
-  padding: 1.5rem 0;
-}
+  .header {
+    padding: 1.5rem 0;
+  }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-}
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
 
-.intro h1 {
-  font-size: 3.375rem;
-  padding: 1.5rem;
-}
+  .intro h1 {
+    font-size: 3.375rem;
+    padding: 1.5rem;
+  }
 
-.vadym_about {
-  flex-direction: column;
-  padding: 1.5rem 0;
-}
+  .vadym_about {
+    flex-direction: column;
+    padding: 1.5rem 0;
+  }
 
-.intro_heading {
-  margin-top: -3rem;
-}
+  .intro_heading {
+    margin-top: -3rem;
+  }
 
-.intro_subheading {
-  margin: 3.3rem 0 1rem;
-}
+  .intro_subheading {
+    margin: 3.3rem 0 1rem;
+  }
 
-.action_text {
-  font-size: 2.625rem;
-}
+  .action_text {
+    font-size: 2.625rem;
+  }
 
-.teacher {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  flex-direction: column;
-}
+  .teacher {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    flex-direction: column;
+  }
 
-.teacher h1 {
-  margin: 0 0 1.5rem 0;
-}
+  .teacher h1 {
+    margin: 0 0 1.5rem 0;
+  }
 
-.teacher_introduction {
-  margin: 1rem 0;
-}
+  .teacher_introduction {
+    margin: 1rem 0;
+  }
 
-.slider {
-  margin-top: 1.5rem;
-}
+  .slider {
+    margin-top: 1.5rem;
+  }
 
-.writer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
+  .writer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 
-.writer_header {
-  margin-bottom: 1.5rem;
-}
+  .writer_header {
+    margin-bottom: 1.5rem;
+  }
 
-.writer_about {
-  margin: 1.5rem 0 0.5rem 0;
-}
+  .writer_about {
+    margin: 1.5rem 0 0.5rem 0;
+  }
 
-.writer_content {
-  margin-bottom: 1.6rem;
-}
+  .writer_content {
+    margin-bottom: 1.6rem;
+  }
 
-.writer_cta {
-  margin-bottom: 3rem;
-}
+  .writer_cta {
+    margin-bottom: 3rem;
+  }
 
-.teamLead {
-  flex-direction: row;
-  gap: 4rem;
-}
+  .teamLead {
+    flex-direction: row;
+    gap: 4rem;
+  }
 
-.teamLead_col {
-  display: flex;
-  flex-direction: column;
-}
+  .teamLead_col {
+    display: flex;
+    flex-direction: column;
+  }
 
-.teamLead_col div {
-  height: 3.5rem; 
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
+  .teamLead_col div {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-.footer {
-  align-items: center;  
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  justify-content: space-between;
-}
+  .footer {
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: space-between;
+  }
 
-.footer_logo {
-  padding-top: 0.375rem;
-}
+  .footer_logo {
+    padding-top: 0.375rem;
+  }
 
-.footer_socialMedia {
-  display: flex;
-  gap: 1.5rem;
-  width: 10.4rem;
-}
+  .footer_socialMedia {
+    display: flex;
+    gap: 1.5rem;
+    width: 10.4rem;
+  }
 
-.footer_socialMedia a {
-  display: inline-block;
-  transition: transform 0.3s ease; 
-}
+  .footer_socialMedia a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -595,9 +599,9 @@
 
   .header {
     display: flex;
-    padding-top: 2.5rem; 
-    padding-bottom: 2.5rem; 
-    justify-content: space-between; 
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -609,31 +613,31 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex; 
-    gap: 1.5rem; 
+    display: flex;
+    gap: 1.5rem;
   }
 
   .navMenu li {
     display: inline;
   }
-  
+
   .navMenu a {
     font-family: "Catamaran", sans-serif;
     text-decoration: none;
-    color: var(--textBtnColor); 
+    color: var(--textBtnColor);
     line-height: 100%;
     letter-spacing: 0.04rem;
     font-size: 1rem;
     font-weight: bold;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
   }
 
   .navMenu a:hover {
-    color: var(--highlightColor); /* Replace with your desired hover color */
+    color: var(--highlightColor);
+    /* Replace color */
   }
 
   .intro {
-    /* padding-top: 2rem; */
     padding-bottom: 5rem;
   }
 
@@ -670,9 +674,8 @@
   }
 
   .vadym_foto img {
-    display: block; /* Removes unwanted inline spacing */
-    /* max-width: 100%;  */
-    height: auto; /* Keeps aspect ratio */
+    display: block;
+    height: auto;
   }
 
   .introImg_text {
@@ -681,15 +684,13 @@
     left: 0;
     transform: translateY(78%);
     text-align: left;
-    z-index: 3; 
+    z-index: 3;
   }
-  
+
   .intro_about_text {
-    flex: 1; /* Allows text to take up remaining space */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    /* gap: 1rem;  */
-    /* padding: 2rem; */
     text-align: left;
   }
 
@@ -703,6 +704,28 @@
   }
 
   .teacher {
-   
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    flex-direction: column;
   }
+
+  .teacher h1 {
+    margin-bottom: 3rem;
+  }
+
+  .teacher_columns {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .teacher_introduction {
+    margin: 1.5rem 0;
+  }
+
+  .teacher_col1,
+  .slider {
+  flex: 1; /* Ensures both columns take up equal width */
+  max-width: 50%; /* Prevents columns from exceeding 50% of the container */
+}
 }
