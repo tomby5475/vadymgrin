@@ -96,8 +96,6 @@
 }
 
 .vadym_foto {
-  /* height: 493px;
-  width: auto; */
   position: relative;
   z-index: 1;
 }
@@ -120,7 +118,6 @@
 .intro_heading {
   font-size: 4rem;
   letter-spacing: 1.28px;
-  /* margin-top: -3rem; */
 }
 
 .intro_name {
@@ -370,11 +367,6 @@
   width: 100%;
 }
 
-.writer_eidos img {
-  max-width: 100%;
-  height: auto;
-}
-
 .main_img_wrapper {
   position: relative;
   display: inline-block;
@@ -384,6 +376,7 @@
   position: relative;
   z-index: 1;
   width: 100%;
+  height: auto;
 }
 
 .eidos_icon {
@@ -450,11 +443,25 @@
 
 .teamLead {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.teamLead_col {
+  display: flex;
+  flex-direction: column;
+}
+
+.teamLead_col div {
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .teamLead_col img {
-  max-height: 100%;
   max-width: 100%;
+  max-height: auto;
 }
 
 .footer {
@@ -533,12 +540,12 @@
     padding-bottom: 1rem;
   }
 
-  .writer_header {
-    margin-bottom: 1.5rem;
-  }
-
   .writer_about {
     margin: 1.5rem 0 0.5rem 0;
+  }
+
+  .main_img img {
+    height: 250px;
   }
 
   .writer_content {
@@ -549,21 +556,10 @@
     margin-bottom: 3rem;
   }
 
-  .teamLead {
-    flex-direction: row;
-    gap: 4rem;
-  }
-
   .teamLead_col {
     display: flex;
     flex-direction: column;
-  }
-
-  .teamLead_col div {
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    flex: 1 1 calc(25% - 1rem);
   }
 
   .footer {
@@ -647,7 +643,6 @@
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6rem;
-
   }
 
   .vadym_about {
@@ -725,7 +720,62 @@
 
   .teacher_col1,
   .slider {
-  flex: 1; /* Ensures both columns take up equal width */
-  max-width: 50%; /* Prevents columns from exceeding 50% of the container */
-}
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .writer {
+    flex-direction: column;
+  }
+
+  .writer_header {
+    margin-top: 2rem;
+  }
+
+  .writer_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .writer_row1,
+  .writer_eidos {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .writer_row1 {
+    text-align: left;
+  }
+
+  .writer_eidos {
+    order: 1;
+  }
+
+  .writer_about {
+    padding-bottom: 1.5rem;
+  }
+
+  .doer_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .doer_col,
+  .teamLead {
+    flex: 1 1 50%;
+  }
+
+  .teamLead_col {
+    flex: 1 1 calc(33.33% - 1rem);
+  }
+
+  .teamLead_col div {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
 }
