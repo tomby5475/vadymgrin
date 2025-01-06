@@ -106,12 +106,6 @@ export default function Teacher() {
               <button
                 className={`${styles.slider_btnNav} ${styles.slider_btnLeft}`}
                 onClick={handlePrevious}
-                style={{
-                  backgroundColor: isPreviousDisabled
-                    ? "var(--btnColorDisabled)"
-                    : "var(--btnColor)",
-                  cursor: isPreviousDisabled ? "not-allowed" : "pointer",
-                }}
                 disabled={isPreviousDisabled}
               >
                 <Image src={btnLeft} alt="left button" />
@@ -131,11 +125,6 @@ export default function Teacher() {
             <button
               className={`${styles.slider_btnNav} ${styles.slider_btnRight}`}
               onClick={handleNext}
-              style={{
-                backgroundColor: isNextDisabled
-                  ? "var(--btnColorDisabled)"
-                  : "var(--btnColor)",
-              }}
               disabled={isNextDisabled}
             >
               <Image src={btnRight} alt="right button" />
