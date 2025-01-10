@@ -15,6 +15,10 @@ html, body {
   background-color: var(--backgroundColor);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 :root{
   --backgroundColor: #00022D;
   --backgroundColorLight: #000450;

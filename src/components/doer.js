@@ -27,10 +27,10 @@ const Doer = () => {
       }
     };
 
-    handleResize(); // Initial check on component mount
+    handleResize(); 
 
-    window.addEventListener("resize", handleResize); // Add resize listener
-    return () => window.removeEventListener("resize", handleResize); // Cleanup listener
+    window.addEventListener("resize", handleResize); 
+    return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
   const images = [

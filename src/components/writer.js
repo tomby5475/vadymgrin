@@ -16,15 +16,14 @@ import eidos_name from "../app/public/images/Eidos_name.svg";
 export default function Writer() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   useEffect(() => {
-    // Check screen size on mount and on resize
     const checkScreenSize = () => {
       setIsSmallScreen(window.innerWidth <= 1023);
     };
 
-    checkScreenSize(); // Initial check
-    window.addEventListener("resize", checkScreenSize); // Add resize listener
+    checkScreenSize(); 
+    window.addEventListener("resize", checkScreenSize); 
 
-    return () => window.removeEventListener("resize", checkScreenSize); // Cleanup
+    return () => window.removeEventListener("resize", checkScreenSize); 
   }, []);
 
   return (

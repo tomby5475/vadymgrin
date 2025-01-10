@@ -1,7 +1,8 @@
 .container {
   font-family: 'Figtree', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  /* overflow-x: hidden; */
+  /* overflow-x: hidden;
+  max-width: 100%; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -125,7 +126,6 @@
   line-height: 150%;
   letter-spacing: 0.64px;
   color: var(--textColorLight);
-  margin-bottom: 1.5rem;
 }
 
 .intro_description {
@@ -164,6 +164,7 @@
   line-height: 160%;
   letter-spacing: 0;
   color: var(--textColorWhite);
+  margin: 1.5rem 0;
 }
 
 .teacher_cta {
@@ -318,7 +319,7 @@
   font-weight: bold;
   line-height: 30px;
   letter-spacing: 0.4px;
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 1rem 0;
   color: var(--textColorLight);
 }
 
@@ -339,8 +340,6 @@
 
 .writer_cta {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
 }
 
 .writer_eidos {
@@ -491,7 +490,7 @@
   }
 
   .header {
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 0;
   }
 
   .logo {
@@ -501,12 +500,15 @@
 
   .intro h1 {
     font-size: 3.375rem;
-    padding: 1.5rem;
+  }
+
+  .introImg {
+    margin-bottom: 4rem;
   }
 
   .vadym_about {
     flex-direction: column;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 0;
   }
 
   .intro_heading {
@@ -514,7 +516,7 @@
   }
 
   .intro_subheading {
-    margin: 3.3rem 0 1rem;
+    margin: 1rem 0 0.5rem;
   }
 
   .action_text {
@@ -531,10 +533,6 @@
     margin: 0 0 1.5rem 0;
   }
 
-  .teacher_introduction {
-    margin: 1rem 0;
-  }
-
   .slider {
     margin-top: 1.5rem;
   }
@@ -542,10 +540,6 @@
   .writer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-  }
-
-  .writer_about {
-    margin: 1.5rem 0 0.5rem 0;
   }
 
   .main_img img {
@@ -580,29 +574,44 @@
 }
 
 @media only screen and (max-width:767px) {
+
   .intro,
   .teacher,
   .writer,
   .doer,
   .footer {
-    padding: 1.5rem 1rem;
-}
+    padding: 1rem 1rem;
+  }
+
+  .writer_cta {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+
   .intro,
   .teacher,
   .writer,
   .doer,
   .footer {
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
   }
+
   .intro h1 {
     max-width: 29rem;
+    /* padding: 1.5rem; */
+  }
+
+  .writer_cta {
+    flex-direction: row;
+    gap: 1rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+
   .header,
   .intro,
   .teacher,
@@ -610,10 +619,6 @@
   .doer,
   .footer {
     padding: 0 6rem;
-  }
-
-  .main {
-    /* max-width: 1439px; */
   }
 
   .header {
@@ -658,7 +663,7 @@
   .intro_header {
     overflow: hidden;
     position: relative;
-    width: 100%; 
+    width: 100%;
   }
 
   .dot {
@@ -750,10 +755,6 @@
     gap: 2rem;
   }
 
-  .teacher_introduction {
-    margin: 1.5rem 0;
-  }
-
   .teacher_col1,
   .slider {
     flex: 1;
@@ -772,7 +773,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
-    /* gap: 3rem; */
     align-items: flex-start;
   }
 
@@ -791,7 +791,8 @@
   }
 
   .writer_content {
-    max-width: 24rem;;
+    max-width: 24rem;
+    ;
   }
 
   .writer_about {
@@ -833,7 +834,7 @@
     position: relative;
   }
 
-  .footer_dots img{
+  .footer_dots img {
     position: absolute;
   }
 
@@ -851,7 +852,7 @@
     top: 50%;
     left: 90%;
   }
-  
+
   .footer_dots img:nth-child(4) {
     top: 90%;
     left: 30%;
@@ -860,33 +861,26 @@
 
 @media (min-width: 1440px) {
 
-  /* .conteiner {
+  .footer_dots {
+    width: 25rem;
+  }
+
+  .wrapper_light {
+    background-color: var(--backgroundColorLight);
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .header,
+  .intro,
+  .teacher,
+  .writer,
+  .doer,
+  .footer {
     max-width: 1116px;
-
-  } */
-
-    .footer_dots {
-      width: 25rem;
-    }
-
-    .wrapper_light {
-      background-color: var(--backgroundColorLight); 
-    }
-
-    .wrapper {
-      width: 100%;
-      
-    }
-    .header,
-    .intro,
-    .teacher,
-    .writer,
-    .doer,
-    .footer  {
-      max-width: 1116px;
-      margin: 0 auto; /* Center content */
-      padding: 16px; /* Adjust padding as needed */
-    }
-   
-
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }

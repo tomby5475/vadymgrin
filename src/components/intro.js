@@ -19,8 +19,8 @@ export default function Intro() {
     const dotsData = Array.from(dots).map((dot) => {
       const initialX = Math.random() * containerWidth;
       const initialY = Math.random() * containerHeight;
-      const velocityX = Math.random() * 0.5 + 0.2;
-      const velocityY = Math.random() * 0.5 + 0.2;
+      const velocityX = Math.random() * 0.2 + 0.2;
+      const velocityY = Math.random() * 0.2 + 0.2;
       dot.style.top = `${initialY}px`;
       dot.style.left = `${initialX}px`;
 
@@ -61,17 +61,17 @@ export default function Intro() {
         <div className={styles.intro_header}>
           <h1>Great design will save the world</h1>
           <div className={styles.dot}>
-          <Image src={dot1} alt="dot" />
-        </div>
-        <div className={styles.dot}>
-          <Image src={dot2} alt="dot" />
-        </div>
-        <div className={styles.dot}>
-          <Image src={dot3} alt="dot" />
-        </div>
-        <div className={styles.dot}>
-          <Image src={dot4} alt="dot" />
-        </div>
+            <Image src={dot1} alt="dot" />
+          </div>
+          <div className={styles.dot}>
+            <Image src={dot2} alt="dot" />
+          </div>
+          <div className={styles.dot}>
+            <Image src={dot3} alt="dot" />
+          </div>
+          <div className={styles.dot}>
+            <Image src={dot4} alt="dot" />
+          </div>
         </div>
         <article className={styles.vadym_about}>
           <div className={styles.introImg}>
@@ -86,16 +86,16 @@ export default function Intro() {
               <span className={styles.intro_name}>I'm Vadym Grin</span>
             </div>
           </div>
+          <p className={styles.intro_description}>
+            I believe great design has the power to transform societies, bridge
+            divides, and enrich lives.
+          </p>
           <div className={styles.intro_about_text}>
             <p className={styles.intro_subheading}>That's why I</p>
             <p className={styles.action_text}>Teach,</p>
             <p className={styles.action_text}>Write about,</p>
             <p className={styles.action_text}>Do</p>
             <p className={styles.intro_focus}>Design</p>
-            <p className={styles.intro_description}>
-              I believe great design has the power to transform societies,
-              bridge divides, and enrich lives.
-            </p>
           </div>
         </article>
       </div>
