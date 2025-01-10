@@ -1,54 +1,16 @@
 .container {
   font-family: 'Figtree', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
 }
 
-.intro,
-.teacher,
-.writer,
-.doer,
-.footer {
-  padding: 0 1rem;
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
-  .footer {
-    padding: 0 3rem;
-  }
-}
-
-@media (min-width: 1024px) {
-
-  .header,
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
-  .footer {
-    padding: 0 6rem;
-  }
-}
-
-@media (min-width: 1440px) {
-
-  .header,
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
-  .footer {
-    padding: 0 17rem;
-  }
+.main {
+  width: 100%;
+  margin: 0 auto;
 }
 
 .header {
@@ -73,6 +35,7 @@
 }
 
 .intro h1 {
+  font-family: 'Catamaran', sans-serif;
   font-weight: bold;
   color: var(--textColorWhite);
   line-height: 120%;
@@ -188,7 +151,6 @@
 }
 
 .teacher h2 {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 150%;
@@ -197,7 +159,6 @@
 }
 
 .teacher_introduction {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 160%;
@@ -303,7 +264,6 @@
 
 .slider_role,
 .slider_date {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 120%;
@@ -321,13 +281,12 @@
 }
 
 .slider_body {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 0.875rem;
   line-height: 21px;
   color: var(--textBtnColorDark);
 }
 
-.slider_body p {
+.slider_body p:first-child {
   margin-bottom: 1rem;
 }
 
@@ -355,7 +314,6 @@
 }
 
 .writer_about {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   line-height: 30px;
@@ -365,7 +323,6 @@
 }
 
 .writer_content {
-  font-family: 'Figtree', 'Catamaran', sans-serif;
   font-size: 1rem;
   line-height: 160%;
   letter-spacing: 0;
@@ -607,6 +564,7 @@
     display: flex;
     flex-direction: column;
     flex: 1 1 calc(25% - 1rem);
+    max-width: 11rem;
   }
 
   .footer {
@@ -621,13 +579,42 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .writer_cta {
-    flex-direction: row;
+@media only screen and (max-width:767px) {
+  .intro,
+  .teacher,
+  .writer,
+  .doer,
+  .footer {
+    padding: 1.5rem 1rem;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .intro,
+  .teacher,
+  .writer,
+  .doer,
+  .footer {
+    padding: 1.5rem 3rem;
+  }
+  .intro h1 {
+    max-width: 29rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  .header,
+  .intro,
+  .teacher,
+  .writer,
+  .doer,
+  .footer {
+    padding: 0 6rem;
+  }
+
+  .main {
+    /* max-width: 1439px; */
+  }
 
   .header {
     display: flex;
@@ -677,6 +664,7 @@
   .dot {
     display: block;
     position: absolute;
+    z-index: 1;
   }
 
   .intro {
@@ -689,6 +677,8 @@
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 6rem;
+    position: relative;
+    z-index: 2;
   }
 
   .vadym_about {
@@ -696,7 +686,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 7rem;
+    gap: 5rem;
     overflow: visible;
   }
 
@@ -775,14 +765,14 @@
   }
 
   .writer_header {
-    margin-top: 2rem;
+    padding-top: 2rem;
   }
 
   .writer_row {
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
-    gap: 3rem;
+    /* gap: 3rem; */
     align-items: flex-start;
   }
 
@@ -800,6 +790,10 @@
     order: 1;
   }
 
+  .writer_content {
+    max-width: 24rem;;
+  }
+
   .writer_about {
     padding-bottom: 1.5rem;
   }
@@ -807,7 +801,7 @@
   .doer_wrapper {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     align-items: flex-start;
   }
 
@@ -865,6 +859,34 @@
 }
 
 @media (min-width: 1440px) {
-  
+
+  /* .conteiner {
+    max-width: 1116px;
+
+  } */
+
+    .footer_dots {
+      width: 25rem;
+    }
+
+    .wrapper_light {
+      background-color: var(--backgroundColorLight); 
+    }
+
+    .wrapper {
+      width: 100%;
+      
+    }
+    .header,
+    .intro,
+    .teacher,
+    .writer,
+    .doer,
+    .footer  {
+      max-width: 1116px;
+      margin: 0 auto; /* Center content */
+      padding: 16px; /* Adjust padding as needed */
+    }
+   
 
 }

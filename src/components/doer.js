@@ -53,46 +53,48 @@ const Doer = () => {
   );
 
   return (
-    <div id="doer" className={`${styles.teacher} ${styles.doer}`}>
-      <h1>Doer</h1>
-      <div className={styles.doer_wrapper}>
-        <div className={styles.doer_col}>
-          <h2>
-            Driving meaningful impact through intuitive and joyful design
-            experiences
-          </h2>
-          <p className={styles.teacher_introduction}>
-            My designs have helped people manage physical pain, improve their
-            financial well-being, achieve business goals, and even provide
-            crucial support to war refugees.
-          </p>
-          <p className={styles.teacher_introduction}>
-            Since 2018, I’ve been also managing designers and leading design
-            teams in B2B companies.
-          </p>
-          <div
-            className={`${styles.btn_book} ${styles.btn_book_manning} ${styles.btn_doer}`}
-          >
-            <a
-              href="https://www.linkedin.com/in/vadimgrin/"
-              target="_blank"
-              rel="noopener noreferrer"
+    <div className={`${styles.wrapper} ${styles.wrapper_light}`}>
+      <div id="doer" className={`${styles.teacher} ${styles.doer}`}>
+        <h1>Doer</h1>
+        <div className={styles.doer_wrapper}>
+          <div className={styles.doer_col}>
+            <h2>
+              Driving meaningful impact through intuitive and joyful design
+              experiences
+            </h2>
+            <p className={styles.teacher_introduction}>
+              My designs have helped people manage physical pain, improve their
+              financial well-being, achieve business goals, and even provide
+              crucial support to war refugees.
+            </p>
+            <p className={styles.teacher_introduction}>
+              Since 2018, I’ve been also managing designers and leading design
+              teams in B2B companies.
+            </p>
+            <div
+              className={`${styles.btn_book} ${styles.btn_book_manning} ${styles.btn_doer}`}
             >
-              <Image src={linkedIn} alt="LinkedIn icon" />
-              <span>LinkedIn</span>
-            </a>
-          </div>
-        </div>
-        <div className={styles.teamLead}>
-          {columnedImages.map((column, colIndex) => (
-            <div key={colIndex} className={styles.teamLead_col}>
-              {column.map((img, imgIndex) => (
-                <div key={imgIndex}>
-                  <Image src={img.src} alt={img.alt} />
-                </div>
-              ))}
+              <a
+                href="https://www.linkedin.com/in/vadimgrin/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image src={linkedIn} alt="LinkedIn icon" />
+                <span>LinkedIn</span>
+              </a>
             </div>
-          ))}
+          </div>
+          <div className={styles.teamLead}>
+            {columnedImages.map((column, colIndex) => (
+              <div key={colIndex} className={styles.teamLead_col}>
+                {column.map((img, imgIndex) => (
+                  <div key={imgIndex}>
+                    <Image src={img.src} alt={img.alt} />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
