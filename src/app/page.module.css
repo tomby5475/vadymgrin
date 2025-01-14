@@ -1,8 +1,8 @@
 .container {
   font-family: 'Figtree', Arial, Helvetica, sans-serif;
   font-size: 16px;
-  /* overflow-x: hidden;
-  max-width: 100%; */
+  overflow-x: hidden;
+  /* max-width: 100%; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -62,7 +62,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   width: fit-content;
   padding-bottom: 2rem;
 }
@@ -319,7 +319,6 @@
   font-weight: bold;
   line-height: 30px;
   letter-spacing: 0.4px;
-  margin: 1.5rem 0 1rem 0;
   color: var(--textColorLight);
 }
 
@@ -366,7 +365,7 @@
 .eidos_icon {
   position: absolute;
   top: 78%;
-  left: 1%;
+  left: 0%;
   z-index: 2;
 }
 
@@ -509,6 +508,7 @@
   .vadym_about {
     flex-direction: column;
     padding: 1.5rem 0 0;
+    width: 100%;
   }
 
   .intro_heading {
@@ -540,6 +540,10 @@
   .writer {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .writer_about {
+    margin: 1.5rem 0 1rem 0;
   }
 
   .main_img img {
@@ -601,7 +605,6 @@
 
   .intro h1 {
     max-width: 29rem;
-    /* padding: 1.5rem; */
   }
 
   .writer_cta {
@@ -610,7 +613,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
   .header,
   .intro,
@@ -620,6 +623,14 @@
   .footer {
     padding: 0 6rem;
   }
+
+  .intro h1 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+} 
+
+@media only screen and (min-width: 1024px) {
 
   .header {
     display: flex;
@@ -679,9 +690,7 @@
   .intro h1 {
     font-size: 6.75rem;
     letter-spacing: 2px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-bottom: 6rem;
+    margin-bottom: 6rem;
     position: relative;
     z-index: 2;
   }
@@ -731,7 +740,7 @@
   }
 
   .intro_description {
-    margin-top: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .action_text {
@@ -797,6 +806,10 @@
 
   .writer_about {
     padding-bottom: 1.5rem;
+  }
+
+  .writer_cta {
+    gap: 1rem;
   }
 
   .doer_wrapper {
@@ -873,7 +886,11 @@
     width: 100%;
   }
 
-  .header,
+  .header {
+    max-width: 1116px;
+    margin: 0 auto;
+  }
+
   .intro,
   .teacher,
   .writer,
@@ -881,6 +898,17 @@
   .footer {
     max-width: 1116px;
     margin: 0 auto;
-    padding: 1rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .intro_colText {
+    flex: 1 1;
+    max-width: 50%;
+  }
+
+  .intro_subheading {
+    margin-bottom: 0.5rem;
   }
 }
+

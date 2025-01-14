@@ -86,16 +86,18 @@ export default function Intro() {
               <span className={styles.intro_name}>I'm Vadym Grin</span>
             </div>
           </div>
-          <p className={styles.intro_description}>
-            I believe great design has the power to transform societies, bridge
-            divides, and enrich lives.
-          </p>
-          <div className={styles.intro_about_text}>
-            <p className={styles.intro_subheading}>That's why I</p>
-            <p className={styles.action_text}>Teach,</p>
-            <p className={styles.action_text}>Write about,</p>
-            <p className={styles.action_text}>Do</p>
-            <p className={styles.intro_focus}>Design</p>
+          <div className={styles.intro_colText}>
+            <p className={styles.intro_description}>
+              I believe great design has the power to transform societies,
+              bridge divides, and enrich lives.
+            </p>
+            <div className={styles.intro_about_text}>
+              <p className={styles.intro_subheading}>That's why I</p>
+              <p className={styles.action_text}>Teach,</p>
+              <p className={styles.action_text}>Write about,</p>
+              <p className={styles.action_text}>Do</p>
+              <p className={styles.intro_focus}>Design</p>
+            </div>
           </div>
         </article>
       </div>
