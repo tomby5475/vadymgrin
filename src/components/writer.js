@@ -31,9 +31,7 @@ export default function Writer() {
       <div id="writer" className={styles.writer}>
         <h1 className={styles.writer_header}>Writer</h1>
         <div className={styles.writer_row}>
-          {/* <div className={styles.book_img_wrapper}> */}
           <Image className={styles.book_img} src={book} alt="book" />
-          {/* </div> */}
           <div className={styles.writer_row1}>
             <h3 className={styles.writer_about}>
               Uncovering design in words to raise a new generation of

@@ -12,13 +12,21 @@ import dot4 from "../app/public/images/Ellipse 4.png";
 export default function Intro() {
   useEffect(() => {
     const dots = document.querySelectorAll(`.${styles.dot}`);
-    const container = document.querySelector(`.${styles.intro_header}`);
-    const containerWidth = container.offsetWidth;
-    const containerHeight = container.offsetHeight;
+    const header = document.querySelector(`.${styles.intro} h1`);
+    const headerRect = header.getBoundingClientRect();
+    console.log("hey");
+    const movementArea = {
+      top: 0,
+      left: 0,
+      width: headerRect.width,
+      height: headerRect.height,
+    };
 
     const dotsData = Array.from(dots).map((dot) => {
-      const initialX = Math.random() * containerWidth;
-      const initialY = Math.random() * containerHeight;
+      const initialX =
+        movementArea.left + Math.random() * (movementArea.width - 10);
+      const initialY =
+        movementArea.top + Math.random() * (movementArea.height - 10);
       const velocityX = Math.random() * 0.2 + 0.2;
       const velocityY = Math.random() * 0.2 + 0.2;
       dot.style.top = `${initialY}px`;
@@ -38,10 +46,16 @@ export default function Intro() {
         data.x += data.vx;
         data.y += data.vy;
 
-        if (data.x <= 0 || data.x + 10 >= containerWidth) {
+        if (
+          data.x <= movementArea.left ||
+          data.x + 10 >= movementArea.left + movementArea.width
+        ) {
           data.vx *= -1;
         }
-        if (data.y <= 0 || data.y + 10 >= containerHeight) {
+        if (
+          data.y <= movementArea.top ||
+          data.y + 10 >= movementArea.top + movementArea.height
+        ) {
           data.vy *= -1;
         }
 
