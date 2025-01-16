@@ -254,6 +254,16 @@
   margin-right: 1rem;
 }
 
+.slider_btnLeft img {
+  margin-right: 1px;
+  margin-top: 3px;
+}
+
+.slider_btnRight img {
+  margin-left: 1px;
+  margin-top: 3px;
+}
+
 .slider_name {
   font-size: 1rem;
   font-weight: bold;
@@ -730,6 +740,10 @@
     text-align: left;
     z-index: 3;
   }
+  .intro_colText {
+    flex: 1 1;
+    max-width: 50%;
+  }
 
   .intro_about_text {
     flex: 1;
@@ -901,10 +915,10 @@
     padding-right: 7rem;
   }
 
-  .intro_colText {
+  /* .intro_colText {
     flex: 1 1;
     max-width: 50%;
-  }
+  } */
 
   .intro_subheading {
     margin-bottom: 0.5rem;
