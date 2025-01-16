@@ -12,7 +12,7 @@ import dot4 from "../app/public/images/Ellipse 4.png";
 
 export default function footer() {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper}> 
       <div id="contacts" className={styles.footer}>
         <div className={styles.footer_logo}>
           <Image src={logo} alt="Logo Grin" />

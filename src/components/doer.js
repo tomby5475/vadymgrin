@@ -54,7 +54,7 @@ const Doer = () => {
 
   return (
     <div className={`${styles.wrapper} ${styles.wrapper_light}`}>
-      <div id="doer" className={`${styles.teacher} ${styles.doer}`}>
+      <div id="doer" className={`${styles.teacher} ${styles.doer} ${styles.component}`}>
         <h1>Doer</h1>
         <div className={styles.doer_wrapper}>
           <div className={styles.doer_col}>
@@ -72,7 +72,7 @@ const Doer = () => {
               teams in B2B companies.
             </p>
             <div
-              className={`${styles.btn_book} ${styles.btn_book_manning} ${styles.btn_doer}`}
+              className={`${styles.btn_book} ${styles.btn_doer}`}
             >
               <a
                 href="https://www.linkedin.com/in/vadimgrin/"

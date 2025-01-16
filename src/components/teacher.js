@@ -73,7 +73,7 @@ export default function Teacher() {
 
   return (
     <div className={`${styles.wrapper} ${styles.wrapper_light}`}>
-      <div id="teacher" className={styles.teacher}>
+      <div id="teacher" className={`${styles.teacher} ${styles.component}`}>
         <h1>Teacher</h1>
         <div className={styles.teacher_columns}>
           <div className={styles.teacher_col1}>

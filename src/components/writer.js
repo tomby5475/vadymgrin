@@ -27,7 +27,7 @@ export default function Writer() {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${styles.component}`}>
       <div id="writer" className={styles.writer}>
         <h1 className={styles.writer_header}>Writer</h1>
         <div className={styles.writer_row}>
@@ -97,7 +97,7 @@ export default function Writer() {
               knowledge and inspiration.
             </p>
             <div className={styles.writer_eidos_wrapper}>
-              <div className={`${styles.btn_book} ${styles.btn_book_manning}`}>
+              <div className={styles.btn_book}>
                 <a href="https://eidosworld.substack.com/">
                   <Image src={substack} alt="substack icon" />
                   <span>Subscribe on Substack</span>

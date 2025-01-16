@@ -19,7 +19,7 @@ export default function Intro() {
       top: 0,
       left: 0,
       width: headerRect.width,
-      height: headerRect.height,
+      height: (headerRect.height + 48),
     };
 
     const dotsData = Array.from(dots).map((dot) => {
@@ -71,7 +71,7 @@ export default function Intro() {
 
   return (
     <div className={styles.wrapper}>
-      <div id="about" className={styles.intro}>
+      <div id="about" className={`${styles.intro} ${styles.component}`}>
         <div className={styles.intro_header}>
           <h1>Great design will save the world</h1>
           <div className={styles.dot}>
@@ -87,7 +87,7 @@ export default function Intro() {
             <Image src={dot4} alt="dot" />
           </div>
         </div>
-        <article className={styles.vadym_about}>
+        <article className={styles.vadym_about} >
           <div className={styles.introImg}>
             <div className={styles.wave_icon}>
               <Image src={wave} alt="wave hand" />

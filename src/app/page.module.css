@@ -302,8 +302,6 @@
 
 .writer {
   background-color: var(--backgroundColor);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .writer_header {
@@ -410,10 +408,6 @@
 
 .btn_book:active {
   background-color: var(--btnColorClick);
-}
-
-.btn_book_manning {
-  margin-bottom: 1.5rem;
 }
 
 .btn_book a {
@@ -546,11 +540,6 @@
     margin-top: 1.5rem;
   }
 
-  .writer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
   .writer_about {
     margin: 1.5rem 0 1rem 0;
   }
@@ -574,6 +563,10 @@
     max-width: 11rem;
   }
 
+  .btn_doer {
+    margin-bottom: 1.5rem;
+  }
+
   .footer {
     align-items: center;
     padding-top: 1rem;
@@ -586,30 +579,31 @@
   }
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width: 767px) {
 
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
-  .footer {
-    padding: 1rem 1rem;
+  .component {
+    padding: 1.5rem 1rem;
   }
 
   .writer_cta {
     flex-direction: column;
     gap: 1rem;
   }
+
+  .footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
-  .footer {
+  .intro {
     padding: 1rem 3rem;
+  }
+
+  .component {
+    padding: 1.5rem 3rem;
   }
 
   .intro h1 {
@@ -620,17 +614,22 @@
     flex-direction: row;
     gap: 1rem;
   }
+
+  .footer {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1439px) {
 
   .header,
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
-  .footer {
+  .intro {
     padding: 0 6rem;
+  }
+
+  .component {
+    padding: 3rem 6rem;
   }
 
   .intro h1 {
@@ -644,7 +643,6 @@
   .header {
     display: flex;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -787,10 +785,6 @@
     flex-direction: column;
   }
 
-  .writer_header {
-    padding-top: 2rem;
-  }
-
   .writer_row {
     display: flex;
     flex-direction: row;
@@ -814,7 +808,6 @@
 
   .writer_content {
     max-width: 24rem;
-    ;
   }
 
   .writer_about {
@@ -839,17 +832,21 @@
 
   .teamLead_col {
     flex: 1 1 calc(33.33% - 1rem);
+    align-items: baseline;
   }
 
   .teamLead_col div {
-    height: fit-content;
-    margin-bottom: 2rem;
+    display: flex;
+    /* height: auto; */
+    /* margin-bottom: 2rem; */
   }
 
   .footer {
     justify-content: space-between;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     align-items: center;
   }
 
@@ -887,6 +884,20 @@
 
 @media (min-width: 1440px) {
 
+  .component {
+    max-width: 1116px;
+    margin: 0 auto;
+    padding: 3rem 7rem ;
+  }
+
+  .intro {
+    padding-bottom: 6rem;
+  }
+
+  .intro h1 {
+    margin-top: 3rem;
+  }
+
   .footer_dots {
     width: 25rem;
   }
@@ -904,21 +915,12 @@
     margin: 0 auto;
   }
 
-  .intro,
-  .teacher,
-  .writer,
-  .doer,
   .footer {
     max-width: 1116px;
     margin: 0 auto;
     padding-left: 7rem;
     padding-right: 7rem;
   }
-
-  /* .intro_colText {
-    flex: 1 1;
-    max-width: 50%;
-  } */
 
   .intro_subheading {
     margin-bottom: 0.5rem;
