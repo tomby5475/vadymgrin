@@ -21,9 +21,6 @@ export default function Header() {
             <li>
               <a href="#doer">DOER</a>
             </li>
-            <li>
-              <a href="#contacts">CONTACTS</a>
-            </li>
           </ul>
         </nav>
       </div>

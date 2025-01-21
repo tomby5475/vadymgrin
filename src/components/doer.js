@@ -17,7 +17,7 @@ const images = [
   { src: attols, alt: "Attols logo", className: styles.attolsLogo },
   { src: macPaw, alt: "Mac Paw logo", className: styles.macpawLogo },
   { src: epam, alt: "Epam logo" },
-  { src: groupon, alt: "Groupon logo" },
+  { src: groupon, alt: "Groupon logo", className: styles.grouponLogo },
   { src: prArmy, alt: "PR Army logo", className: styles.prarmyLogo},
   { src: adjust, alt: "Adjust logo", className: styles.adjustLogo },
   { src: trinetix, alt: "Trinetix logo", className: styles.trinetixLogo },

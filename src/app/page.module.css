@@ -864,6 +864,15 @@
     max-width: 100%;
     height: auto;
   }
+
+  .epamLogo {
+    padding-top: 2px;
+  }
+
+  .olxLogo {
+    padding-top: 2px;
+  }
+
   .attolsLogo {
     padding-top: 2px;
   }
