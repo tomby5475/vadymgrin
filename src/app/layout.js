@@ -9,6 +9,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <body>
         {children}

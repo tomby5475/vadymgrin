@@ -74,9 +74,7 @@ const Doer = () => {
               Since 2018, I’ve been also managing designers and leading design
               teams in B2B companies.
             </p>
-            <div
-              className={`${styles.btn_book} ${styles.btn_doer}`}
-            >
+            <div className={` ${styles.btn} ${styles.btn_book} ${styles.btn_doer}`}>
               <a
                 href="https://www.linkedin.com/in/vadimgrin/"
                 target="_blank"

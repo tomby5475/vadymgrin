@@ -24,16 +24,16 @@ export default function footer() {
           <Image src={dot4} alt="dot" />
         </div>
         <div className={styles.footer_socialMedia}>
-          <a href="https://www.linkedin.com/in/vadimgrin/">
+          <a href="https://www.linkedin.com/in/vadimgrin/" target="_blank">
             <Image src={linkedIn} alt="LinkedIn icon" />
           </a>
-          <a href="https://eidosworld.substack.com/">
+          <a href="https://eidosworld.substack.com/" target="_blank">
             <Image src={substack} alt="Substack icon" />
           </a>
-          <a href="https://www.instagram.com/vadimgrin/">
+          <a href="https://www.instagram.com/vadimgrin/" target="_blank">
             <Image src={insta} alt="Instagram icon" />
           </a>
-          <a href="https://medium.com/@vadimgrin">
+          <a href="https://medium.com/@vadimgrin" target="_blank">
             <Image src={medium} alt="Medium icon" />
           </a>
         </div>

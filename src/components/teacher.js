@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "../app/page.module.css";
-import callIcon from "../app/public/images/call_icon.png";
-import writeIcon from "../app/public/images/message_icon.png";
+import callIcon from "../app/public/images/callIcon.svg";
+import writeIcon from "../app/public/images/writeIcon.svg";
 import btnLeft from "../app/public/images/btnLeft.svg";
 import btnRight from "../app/public/images/btnRight.svg";
 
@@ -87,13 +87,13 @@ export default function Teacher() {
               you’d like me to support your journey.
             </p>
             <div className={styles.teacher_cta}>
-              <div className={styles.cta_btn}>
-                <a href="https://calendly.com/vadimgrin/meeting-with-vadym">
+              <div className={`${styles.btn} ${styles.cta_btn}`}>
+                <a href="https://calendly.com/vadimgrin/meeting-with-vadym" target="_blank">
                   <Image src={callIcon} alt="headphones with microphone" />
                   <span>Book a call</span>
                 </a>
               </div>
-              <div className={styles.cta_btn}>
+              <div className={`${styles.btn} ${styles.cta_btn}`}>
                 <a href="mailto:vadim.grin@gmail.com">
                   <Image src={writeIcon} alt="paper airplane" />
                   <span>Message me</span>

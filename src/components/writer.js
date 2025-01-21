@@ -47,14 +47,14 @@ export default function Writer() {
               products that create positive emotional experiences.
             </p>
             <div className={styles.writer_cta}>
-              <div className={styles.btn_book}>
-                <a href="https://bit.ly/3ZsUQS4">
+              <div className={`${styles.btn} ${styles.btn_book}`}>
+                <a href="https://bit.ly/3ZsUQS4" target="_blank">
                   <Image src={manning} alt="manning icon" />
                   <span>Get it on Manning</span>
                 </a>
               </div>
-              <div className={styles.btn_book}>
-                <a href="">
+              <div className={`${styles.btn} ${styles.btn_book}`}>
+                <a href=""  target="_blank">
                   <Image src={amazon} alt="amazon icon" />
                   <span>Buy it on Amazon</span>
                 </a>
@@ -97,8 +97,8 @@ export default function Writer() {
               knowledge and inspiration.
             </p>
             <div className={styles.writer_eidos_wrapper}>
-              <div className={styles.btn_book}>
-                <a href="https://eidosworld.substack.com/">
+              <div className={`${styles.btn} ${styles.btn_book}`}>
+                <a href="https://eidosworld.substack.com/"  target="_blank">
                   <Image src={substack} alt="substack icon" />
                   <span>Subscribe on Substack</span>
                 </a>
