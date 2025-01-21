@@ -11,10 +11,26 @@ import prArmy from "../app/public/images/logo_prArmy.svg";
 import adjust from "../app/public/images/logo_adjust.svg";
 import trinetix from "../app/public/images/logo_trinetix.svg";
 import olx from "../app/public/images/logo_olx.svg";
-import firstAid from "../app/public/images/logo_firstAid.svg";
+import firstAid from "../app/public/images/firstAid.svg";
+
+const images = [
+  { src: attols, alt: "Attols logo", className: styles.attolsLogo },
+  { src: macPaw, alt: "Mac Paw logo", className: styles.macpawLogo },
+  { src: epam, alt: "Epam logo" },
+  { src: groupon, alt: "Groupon logo" },
+  { src: prArmy, alt: "PR Army logo", className: styles.prarmyLogo},
+  { src: adjust, alt: "Adjust logo", className: styles.adjustLogo },
+  { src: trinetix, alt: "Trinetix logo", className: styles.trinetixLogo },
+  { src: olx, alt: "OLX logo", className: styles.olxLogo },
+  { src: firstAid, alt: "First Aid logo",  className: styles.firstAidLogo },
+];
 
 const Doer = () => {
-  const [columns, setColumns] = useState(2); // Default column count
+  const [columns, setColumns] = useState(2); 
+  const [orderedImages, setOrderedImages] = useState([]);
+
+  const smallScreenOrder = [0, 5, 1, 6, 2, 7, 3, 8, 4];
+  const bigScreenOrder = [0, 5, 3, 1, 6, 8, 2, 7, 4];
 
   useEffect(() => {
     const handleResize = () => {
@@ -22,8 +38,10 @@ const Doer = () => {
 
       if (screenWidth >= 1024) {
         setColumns(3);
+        setOrderedImages(bigScreenOrder.map((index) => images[index]));
       } else {
         setColumns(2);
+        setOrderedImages(smallScreenOrder.map((index) => images[index]));
       }
     };
 
@@ -33,23 +51,8 @@ const Doer = () => {
     return () => window.removeEventListener("resize", handleResize); 
   }, []);
 
-  const images = [
-    { src: attols, alt: "Attols logo" },
-    { src: macPaw, alt: "Mac Paw logo" },
-    { src: epam, alt: "Epam logo" },
-    { src: groupon, alt: "Groupon logo" },
-    { src: prArmy, alt: "PR Army logo" },
-    { src: adjust, alt: "Adjust logo" },
-    { src: trinetix, alt: "Trinetix logo" },
-    { src: olx, alt: "OLX logo" },
-    { src: firstAid, alt: "First Aid logo" },
-  ];
-
-  const customOrder = [0, 5, 1, 6, 2, 7, 3, 8, 4];
-  const reorderedImages = customOrder.map((index) => images[index]);
-
   const columnedImages = Array.from({ length: columns }, (_, colIndex) =>
-    reorderedImages.filter((_, imgIndex) => imgIndex % columns === colIndex)
+    orderedImages.filter((_, imgIndex) => imgIndex % columns === colIndex)
   );
 
   return (
@@ -88,7 +91,7 @@ const Doer = () => {
             {columnedImages.map((column, colIndex) => (
               <div key={colIndex} className={styles.teamLead_col}>
                 {column.map((img, imgIndex) => (
-                  <div key={imgIndex}>
+                  <div key={imgIndex} className={img.className || ''}>
                     <Image src={img.src} alt={img.alt} />
                   </div>
                 ))}

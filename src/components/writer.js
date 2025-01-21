@@ -33,10 +33,10 @@ export default function Writer() {
         <div className={styles.writer_row}>
           <Image className={styles.book_img} src={book} alt="book" />
           <div className={styles.writer_row1}>
-            <h3 className={styles.writer_about}>
+            <h2 className={styles.writer_about}>
               Uncovering design in words to raise a new generation of
               changemakers
-            </h3>
+            </h2>
             <p className={styles.writer_content}>
               In 2024, I published Emotional Digital Design - a book for novice
               designers and all digital professionals who want to better
@@ -87,10 +87,10 @@ export default function Writer() {
             </div>
           </div>
           <div className={styles.writer_row1}>
-            <h3 className={styles.writer_about}>
+            <h2 className={styles.writer_about}>
               For the growing community of such professionals, I also regularly
               publish insightful content on Substack
-            </h3>
+            </h2>
             <p className={styles.writer_content}>
               Discover a world of design with premium articles, gain insights
               into digital products, explore new tools, and unlock design
