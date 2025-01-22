@@ -2,16 +2,16 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../app/page.module.css";
-import linkedIn from "../app/public/images/icon_linkedin.svg";
-import attols from "../app/public/images/logo_attols.svg";
-import macPaw from "../app/public/images/logo_macPow.svg";
-import epam from "../app/public/images/logo_epam.svg";
-import groupon from "../app/public/images/logo_groupon.svg";
-import prArmy from "../app/public/images/logo_prArmy.svg";
-import adjust from "../app/public/images/logo_adjust.svg";
-import trinetix from "../app/public/images/logo_trinetix.svg";
-import olx from "../app/public/images/logo_olx.svg";
-import firstAid from "../app/public/images/firstAid.svg";
+import linkedIn from "/public/images/icon_linkedin.svg";
+import attols from "/public/images/logo_attols.svg";
+import macPaw from "/public/images/logo_macPow.svg";
+import epam from "/public/images/logo_epam.svg";
+import groupon from "/public/images/logo_groupon.svg";
+import prArmy from "/public/images/logo_prArmy.svg";
+import adjust from "/public/images/logo_adjust.svg";
+import trinetix from "/public/images/logo_trinetix.svg";
+import olx from "/public/images/logo_olx.svg";
+import firstAid from "/public/images/firstAid.svg";
 
 const images = [
   { src: attols, alt: "Attols logo", className: styles.attolsLogo },

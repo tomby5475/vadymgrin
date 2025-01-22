@@ -3,15 +3,17 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "../app/page.module.css";
-import book from "../app/public/images/book_img.png";
-import eidos from "../app/public/images/Eidos.png";
-import eidosBig from "../app/public/images/eidosBig.png";
-import manning from "../app/public/images/manning_icon.svg";
-import amazon from "../app/public/images/amazon_icon.svg";
-import substack from "../app/public/images/substack.svg";
-import cloud from "../app/public/images/cloud.png";
-import cloudBig from "../app/public/images/cloudBig.png";
-import eidos_name from "../app/public/images/Eidos_name.svg";
+import book from "/public/images/book_img.png";
+import eidos from "/public/images/Eidos.png";
+import eidosBig from "/public/images/eidosBig.png";
+import manning from "/public/images/manning_icon.svg";
+import amazon from "/public/images/amazon_icon.svg";
+import substack from "/public/images/substack.svg";
+import cloud from "/public/images/cloud.png";
+import cloud2x from "/public/images/cloud@2x.png";
+import cloud3x from "/public/images/cloud@3x.png";
+import cloudBig from "/public/images/cloudBig.png";
+import eidos_name from "/public/images/Eidos_name.svg";
 
 export default function Writer() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -20,10 +22,10 @@ export default function Writer() {
       setIsSmallScreen(window.innerWidth <= 1023);
     };
 
-    checkScreenSize(); 
-    window.addEventListener("resize", checkScreenSize); 
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
 
-    return () => window.removeEventListener("resize", checkScreenSize); 
+    return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
   return (
@@ -79,9 +81,15 @@ export default function Writer() {
               <div className={styles.cloud}>
                 <Image
                   src={isSmallScreen ? cloud : cloudBig}
+                  srcSet={
+                    isSmallScreen
+                      ? `${cloud.src} 1x, ${cloud2x.src} 2x, ${cloud3x.src} 3x` 
+                      : `${cloudBig.src} 1x, ${cloud2x.src} 2x, ${cloud3x.src} 3x` 
+                  }
                   alt="Cloud"
                   width={isSmallScreen ? 22 : 32}
-                  height={isSmallScreen ? 22 : 32}
+                  // height={isSmallScreen ? 22 : 32}
+                  style={{height:"auto"}}
                 />
               </div>
             </div>
@@ -98,7 +106,7 @@ export default function Writer() {
             </p>
             <div className={styles.writer_eidos_wrapper}>
               <div className={`${styles.btn} ${styles.btn_book}`}>
-                <a href="https://eidosworld.substack.com/"  target="_blank">
+                <a href="https://eidosworld.substack.com/" target="_blank">
                   <Image src={substack} alt="substack icon" />
                   <span>Subscribe on Substack</span>
                 </a>

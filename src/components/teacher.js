@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import styles from "../app/page.module.css";
-import callIcon from "../app/public/images/callIcon.svg";
-import writeIcon from "../app/public/images/writeIcon.svg";
-import btnLeft from "../app/public/images/btnLeft.svg";
-import btnRight from "../app/public/images/btnRight.svg";
+import callIcon from "/public/images/callIcon.svg";
+import writeIcon from "/public/images/writeIcon.svg";
+import btnLeft from "/public/images/btnLeft.svg";
+import btnRight from "/public/images/btnRight.svg";
 
 const reviews = [
   {

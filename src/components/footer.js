@@ -1,14 +1,14 @@
 import Image from "next/image";
 import styles from "../app/page.module.css";
-import logo from "../app/public/images/logo_grinS.svg";
-import linkedIn from "../app/public/images/icon_linkedin.svg";
-import substack from "../app/public/images/icon_substack.svg";
-import insta from "../app/public/images/icon_instagram.svg";
-import medium from "../app/public/images/icon_medium.svg";
-import dot1 from "../app/public/images/Ellipse 1.png";
-import dot2 from "../app/public/images/Ellipse 2.png";
-import dot3 from "../app/public/images/Ellipse 3.png";
-import dot4 from "../app/public/images/Ellipse 4.png";
+import logo from "/public/images/logo_grinS.svg";
+import linkedIn from "/public/images/icon_linkedin.svg";
+import substack from "/public/images/icon_substack.svg";
+import insta from "/public/images/icon_instagram.svg";
+import medium from "/public/images/icon_medium.svg";
+import dot1 from "/public/images/Ellipse 1.png";
+import dot2 from "/public/images/Ellipse 2.png";
+import dot3 from "/public/images/Ellipse 3.png";
+import dot4 from "/public/images/Ellipse 3.png";
 
 export default function footer() {
   return (

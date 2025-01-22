@@ -2,19 +2,20 @@
 import { useEffect } from "react";
 import Image from "next/image";
 import styles from "../app/page.module.css";
-import vadym from "../app/public/images/vadym.png";
-import wave from "../app/public/images/wave.png";
-import dot1 from "../app/public/images/Ellipse 1.png";
-import dot2 from "../app/public/images/Ellipse 2.png";
-import dot3 from "../app/public/images/Ellipse 3.png";
-import dot4 from "../app/public/images/Ellipse 4.png";
+import vadym from "/public/images/vadym.png";
+import wave from "/public/images/wave.png";
+import wave2x from "/public/images/hand@2.png";
+import wave3x from "/public/images/hand@3.png";
+import dot1 from "/public/images/Ellipse 1.png";
+import dot2 from "/public/images/Ellipse 2.png";
+import dot3 from "/public/images/Ellipse 3.png";
+import dot4 from "/public/images/Ellipse 4.png";
 
 export default function Intro() {
   useEffect(() => {
     const dots = document.querySelectorAll(`.${styles.dot}`);
     const header = document.querySelector(`.${styles.intro} h1`);
     const headerRect = header.getBoundingClientRect();
-    console.log("hey");
     const movementArea = {
       top: 0,
       left: 0,
@@ -90,7 +91,12 @@ export default function Intro() {
         <article className={styles.vadym_about} >
           <div className={styles.introImg}>
             <div className={styles.wave_icon}>
-              <Image src={wave} alt="wave hand" />
+              <Image 
+              src={wave} 
+              srcSet={`${wave.src} 1x, ${wave2x.src} 2x, ${wave3x.src} 3x`}
+              width={32}
+              style={{height:'auto'}}
+              alt="wave hand" />
             </div>
             <div className={styles.vadym_foto}>
               <Image src={vadym} alt="Vadym" />
