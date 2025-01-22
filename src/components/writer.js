@@ -53,12 +53,12 @@ export default function Writer() {
                   <span>Get it on Manning</span>
                 </a>
               </div>
-              <div className={`${styles.btn} ${styles.btn_book}`}>
+              {/* <div className={`${styles.btn} ${styles.btn_book}`}>
                 <a href=""  target="_blank">
                   <Image src={amazon} alt="amazon icon" />
                   <span>Buy it on Amazon</span>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

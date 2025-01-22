@@ -61,7 +61,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
   width: fit-content;
   padding-bottom: 2rem;
 }
@@ -81,7 +80,6 @@
 
 .introImg_text {
   position: absolute;
-  /* bottom: -7%; */
   left: 0%;
   color: var(--title);
   z-index: 3;
@@ -472,11 +470,15 @@
   }
 
   .introImg {
-    margin-bottom: 4rem;
+    margin: 0 auto;
   }
 
   .introImg_text {
     bottom: -7%;
+  }
+
+  .intro_description {
+    padding-top: 3.5rem;
   }
 
   .vadym_about {
