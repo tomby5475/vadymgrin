@@ -8,8 +8,8 @@ export default function RootLayout({ children }) {
         <title>Vadym Grin</title>
         <meta property="og:title" content="Vadym Grin" />
         <meta property="og:description" content="Design can save the world. Website manifesto by designer, mentor, and writer Vadym Grin." />
-        <meta property="og:image" content="https://vadymgrin.vercel.app/images/personal-social.png" />
-        <meta property="og:url" content="https://example.com" />
+        <meta property="og:image" content="/images/personal-social.png" />
+        <meta property="og:url" content="https://vadymgrin.vercel.app/" />
         <link
           href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
           rel="stylesheet"
