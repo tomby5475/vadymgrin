@@ -7,14 +7,9 @@ export default function RootLayout({ children }) {
       <Head>
         <title>Vadym Grin</title>
         <meta property="og:title" content="Vadym Grin" />
-        <meta
-          property="og:description"
-          content="Design can save the world. Website manifesto by designer, mentor, and writer Vadym Grin."
-        />
-        <meta
-          property="og:image"
-          content="https://vadymgrin.vercel.app/images/personal-social.png"
-        />
+        <meta property="og:type" content="image" />
+        <meta property="og:description" content="Design can save the world. Website manifesto by designer, mentor, and writer Vadym Grin."/>
+        <meta property="og:image" content="/public/images/personal-social.png" />
         <meta property="og:url" content="https://vadymgrin.vercel.app/" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
