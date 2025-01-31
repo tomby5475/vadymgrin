@@ -7,10 +7,10 @@ export const metadata = {
     title: "Vadym Grin",
     type: "website",
     description: "Design can save the world. Website manifesto by designer, mentor, and writer Vadym Grin.",
-    url: "https://vadymgrin.vercel.app/",
+    url: "https://vadimgrin.com/",
     images: [
       {
-        url: "https://vadymgrin.vercel.app/images/personal-social.png",
+        url: "https://vadimgrin.com/images/personal-social.png",
         width: 1200,
         height: 630,
         alt: "Vadym Grin Social Preview",
